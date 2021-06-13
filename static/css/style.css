@@ -6,7 +6,7 @@ body, html{
 }
 
 body{
-    background: url(../assets/bg/bg.jpg) no-repeat center center fixed; 
+    background: url(../assets/bg/bg.jpg) no-repeat fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -52,6 +52,7 @@ a:active{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.256);
     margin: 0;
     width: 100%;
+    position: fixed;
 }
 
 h1{
