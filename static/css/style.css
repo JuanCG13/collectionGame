@@ -41,7 +41,6 @@ a:active{
 
 .center{
     margin: 0 auto;
-    margin-top: 3rem;
 }
 
 .center-text{
@@ -52,6 +51,7 @@ a:active{
     background-color: rgb(73, 100, 142);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.256);
     margin: 0;
+    width: 100%;
 }
 
 h1{
@@ -87,3 +87,60 @@ img{
 .reset:hover{
     background-color: rgb(111, 149, 210);
 }
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin-top: 1rem;
+}
+
+.list-sort{
+    height: 20rem;
+    width: 18rem;
+    background-color: rgb(73, 100, 142);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.256);
+    border-radius: 20px;
+    margin: 1rem;
+    padding: 1rem;
+    color: white;
+    overflow: auto;
+}
+
+tr{
+    text-align: center;
+}
+
+.header{
+    border-bottom: 1px solid white;
+}
+
+.name-collectable{
+    color: white;
+    padding: 0.5rem;
+    background-color: rgb(73, 100, 142);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.256);
+    border-radius: 20px;
+
+}
+
+.text-left{
+    text-align: left;
+}
+
+.icon{
+    margin-right: 0.5rem;
+    width: 30px;
+    height: 30px;
+}
+
+/* transition of img */
+
+/* .fade-enter-active {
+  transition: opacity .5s;
+}
+.fade-enter {
+  opacity:0;
+} */

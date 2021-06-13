@@ -21,20 +21,44 @@
             <div class="reset">RESET</div>
         </a>
 
-        <template v-if="!showImage">
-            <a href="#">
-                <div @click="showimageClick" class="button-collectable center" id="collectableButton">
-                    PLAY
-                </div>
+        <div class="flex-container center">
 
-            </a>
-        </template>
+            <div>
+                <template v-if="!showImage">
+                    <a href="#">
+                        <div @click="showimageClick" class="button-collectable center" id="collectableButton">
+                            PLAY
+                        </div>
 
-        <template v-if="showImage">
-            <div class="image-collectable center">
-                <img :src="selectImage" alt="" width="100%" height="100%">
+                    </a>
+                </template>
+
+                <template v-if="showImage">
+                    <div class="image-collectable center">
+                        <img :src="selectImage.url" alt="" width="100%" height="100%">
+                    </div>
+                    <div>
+                        <h4 class="center-text name-collectable">{{selectImage.name}}</h4>
+                    </div>
+                </template>
             </div>
-        </template>
+
+            <div class="list-sort">
+                <table style="width:100%">
+                    <tr class="text-left">
+                        <th>Name</th>
+                        <th>Count</th>
+                    </tr>
+
+                    <tr v-for="list in listCount" class="text-left">
+                        <td class="img-text"><span><img class="icon" :src="list.url" alt=""></span>{{list.name}}</td>
+                        <td>{{list.count}}</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
 
     </div>
 
