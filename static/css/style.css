@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
 body, html{
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body{
-    background-image: url('../assets/bg/bg.jpg');
-    background-repeat:no-repeat;
-    background-size: cover;
+    background: url(../assets/bg/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .button-collectable{
@@ -27,14 +32,16 @@ body{
 
 a{
     text-decoration: none;
+    color: white;
 }
+
 a:active{
     color: black;
 }
 
 .center{
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .center-text{
@@ -51,4 +58,32 @@ h1{
     margin: 0;
     color: white;
     padding: 2rem 0;
+}
+
+.image-collectable{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background-color: rgb(73, 100, 142);
+    font-size: 5rem;
+    color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.256);
+}
+
+img{
+    border-radius: 50%;
+}
+
+.reset{
+    width: 10rem;
+    border-radius: 20px;
+    background-color: rgb(73, 100, 142);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.256);
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.reset:hover{
+    background-color: rgb(111, 149, 210);
 }
