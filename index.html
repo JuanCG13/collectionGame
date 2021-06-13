@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Collection Game</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="nav">
+            <h1 class="center-text">Collection Game</h1>
+
+        </div>
+        <template v-if="!showImage">
+            <a href="#">
+                <div @click="showimageClick" class="button-collectable center" id="collectableButton">
+                    Sortear
+                </div>
+
+            </a>
+        </template>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="static/js/index.js"></script>
+</body>
+
+</html>
